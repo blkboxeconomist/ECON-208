@@ -1,0 +1,229 @@
+\documentclass[11pt]{article}
+
+\usepackage{fullpage}
+
+%% color for the links
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{longtable}
+\usepackage{graphicx}
+
+% We will generate all images so they have a width \maxwidth. This means
+% that they will get their normal width if they fit onto the page, but
+% are scaled down if they would overflow the margins.
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth \else\Gin@nat@width\fi}
+\makeatother
+\let\Oldincludegraphics
+\includegraphics
+
+%% hyperlinks
+\usepackage[colorlinks=true, urlcolor=MidnightBlue, plainpages=false,]{
+    hyperref
+}% color for the links
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{0}
+
+\title{Programming for economists}
+\date{Spring 2026}
+
+\begin{document}
+    \maketitle
+
+    \begin{flushleft}
+        \section{Contact Information}
+        \label{contact-information}
+
+        Instructor: Chase Coleman\\ Office: KFT 452\\ Email: cc257@rice.edu\\
+        Office Hours: TBA
+
+        \section{Course Objectives and Learning Outcomes}
+        \label{course-objectives-and-learning-outcomes}
+
+        Economics is increasingly becoming a compute-first discipline where individuals
+        are expected to know how to work with data, numerical tools, and algorithms.
+
+        This course introduces students to programming with Python in the context
+        of economic applications. Students will learn how to clean, manipulate,
+        and visualize real-world economic data using libraries such as pandas, numpy,
+        and matplotlib. Emphasis is placed on understanding how messy data are handled
+        in practice and how programming empowers economists to answer pressing policy
+        and research questions.
+
+        \section{Required Texts and Materials}
+        \label{required-texts-and-materials}
+
+        No textbooks required. There are relevant and useful materials on the QuantEcon
+        website and we will occasionally reference the site but all relevant material
+        is online and open source.
+
+        All material will be delivered to students in the form of Jupyter Notebooks.
+
+        \section{Exams and Papers}
+        \label{exams-and-papers}
+
+        There will be two exams and a single class project.
+
+        The project objectives will be described in a separate document but we
+        have found that an independent (small groups allowed) project where
+        students choose their own topic of interest is one of the most rewarding
+        ways to learn. It allows students to focus in on certain aspects of the course
+        that they find most interesting and explore those more deeply than they otherwise
+        would have been able to.
+
+        \section{Grade Policies}
+        \label{grade-policies}
+
+        There will be 4 categories that make up your grade:
+
+        \begin{itemize}
+            \item \textit{Code practice} (25\%): These will be homework
+                assignments and we have found that students who complete their
+                homework assignments tend to keep up with the material better
+                and earn ``easy'' points for their final grade. I will drop your lowest
+                score here. You may work collaboratively with other students on
+                the code practices.
+
+            \item \textit{Exam} (30\%): There will be two exams. The exam is usually
+                administered as a take-home exam with open note and open internet
+                (if this is abused, we will have to change this policy). This should
+                be individual work and should not be shared with others.
+
+            \item \textit{Project} (40\%): The semester-long project will be the
+                biggest component of your grade. We purposefully give you lots of
+                freedom here so that you can pursue something that you are interested
+                in.
+
+            \item \textit{Completion} (5\%): We expect students to participate
+                in class. If you have questions, please dono't be shy about
+                asking them.
+        \end{itemize}
+
+        All deadlines are a hard-stop and late work will not be accepted.
+
+        When something is due ``end of day'', you may interpret that to be
+        submit the assignment sometime before 02:30 the following day, i.e. if I
+        say something is due ``end of day'' Wednesday, then you are permitted to turn
+        it in as late as 2:30 am on Thursday morning (though I recommend getting
+        in the habit of submitting it earlier than that).
+
+        \section{Absence Policies}
+        \label{absence-policies}
+
+        I prefer you attend class and it will be a component of your completion
+        grade. If there is a reason that you cannot attend then please let me know
+        beforehand.
+
+        \section{Rice Honor Code}
+        \label{rice-honor-code}
+
+        In this course, all students will be held to the standards of the Rice Honor
+        Code, a code that you pledged to honor when you matriculated at this
+        institution. If you are unfamiliar with the details of this code and how it
+        is administered, you should consult the Honor System Handbook at
+        \url{http://honor.rice.edu/honor-system-handbook/}. This handbook outlines
+        the University's expectations for the integrity of your academic work,
+        the procedures for resolving alleged violations of those expectations, and
+        the rights and responsibilities of students and faculty members throughout
+        the process.
+
+        \section{Disability Resource Center}
+        \label{disability-resource-center}
+
+        If you have a documented disability or other condition that may affect
+        academic performance you should: 1) make sure this documentation is on
+        file with the Disability Resource Center (Allen Center, Room 111 /
+        \href{mailto:adarice@rice.edu}{adarice@rice.edu} / x5841) to determine the
+        accommodations you need; and 2) talk with me to discuss your accommodation
+        needs.
+
+        \section{Syllabus Change Policy}
+        \label{syllabus-change-policy}
+
+        This syllabus is only a guide for the course and is subject to change
+        with advanced notice.
+
+        \section{Course Schedule}
+        \label{course-schedule}
+
+        Recognize that this is a tentative schedule. Depending on class
+        interests and questions, we may spend more time on certain topics and less
+        time on others.
+
+        \subsection{2026-01-16}
+        \label{section}
+
+        Syllabus + Course expectations + Python introduction
+
+        \subsection{2026-01-23}
+        \label{section-1}
+
+        Continue the Python introduction
+
+        \subsection{2026-01-30}
+        \label{section-2}
+
+        Organizing data with pandas
+
+        \subsection{2026-02-06}
+        \label{section-3}
+
+        Cleaning, reshaping, and merging with pandas
+
+        \subsection{2026-02-13}
+        \label{no-class-1}
+
+        No class
+
+        \subsection{2026-02-20}
+        \label{section-4}
+
+        numpy + scipy
+
+        \subsection{2026-02-27}
+        \label{section-5}
+
+        Visualization tools in Python
+
+        \subsection{2026-03-06}
+        \label{section-6}
+
+        Split-apply-combine with pandas + First exam
+
+        \subsection{2026-03-13}
+        \label{section-7}
+
+        APIs and labor statistics
+
+        \subsection{2026-03-20}
+        \label{no-class-2}
+
+        No class
+
+        \subsection{2026-03-28}
+        \label{section-8}
+
+        Introduction to SQL
+
+        \subsection{2026-04-03}
+        \label{section-9}
+
+        Polars and duckdb
+
+        \subsection{2026-04-10}
+        \label{section-10}
+
+        An introduction to Markov chains + a ``Lake model'' of employment
+
+        \subsection{2026-04-17}
+        \label{section-11}
+
+        Applying the Lake model to data
+
+        \subsection{2026-04-24}
+        \label{section-12}
+
+        Making maps + Project presentations
+    \end{flushleft}
+\end{document}
