@@ -1,0 +1,13 @@
+*.ipynb_checkpoints
+
+*.aux
+*.log
+*.out
+
+# Data files
+*.parquet
+*.db
+*.feather
+*.zip
+*.gdb
+*.gdb.zip
